@@ -1,12 +1,8 @@
-// WHEN I am presented with the Resume section
-// THEN I see a link to a downloadable resume and a list of the developer’s proficiencies
-
 import React from "react";
 import styles from "./resume.module.css";
 import resume from "../assets/resume.pdf"
 
 function Resume() {
-  //placeholder p tag
   return (
     <section className={styles.parent}>
       <h2>Skills</h2>
