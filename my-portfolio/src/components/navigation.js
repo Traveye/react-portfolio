@@ -30,6 +30,7 @@ function Navigation() {
   return (
     <header className={styles.navParent}>
       <h1>Travis DuPree</h1>
+      
       <nav>
         <ul className={styles.ulParent}>
           <li>

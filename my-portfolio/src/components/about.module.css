@@ -5,17 +5,11 @@
 }
 
 .parent > * {
-    margin: 0.5rem;
+    margin: 1rem;
 }
 
-.skillsList {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-@media screen and (max-width: 768px) {
-    .skillsList {
-        grid-template-columns: repeat(2, 1fr);
-    }
+.img {
+    width: 180px;
+    height: 180px;
 }
     
