@@ -7,11 +7,12 @@
 
 .ulParent{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 li{
     list-style: none;
+    margin: 0;
 }
 
 a {
@@ -19,4 +20,22 @@ a {
     color: black;
 }
 
+/* media queries for mobile*/
+
+@media (max-width: 768px) {
+    .navParent{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .ulParent{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        gap: .5rem;
+    }
+
+}
 
