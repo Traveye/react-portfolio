@@ -43,7 +43,7 @@ function Contact() {
 
   return (
     <section className={styles.grid1}>
-      <h2>Contact</h2>
+      <h2>You can reach me below: </h2>
       <form className={styles.grid2} onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name"></label>
