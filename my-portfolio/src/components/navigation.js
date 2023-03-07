@@ -7,21 +7,25 @@
 // WHEN I click on a navigation title
 // THEN I am presented with the corresponding section below the navigation without the page reloading and that title is highlighted
 
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./navigation.module.css";
 import anime from "animejs/lib/anime.es.js";
 
 function Navigation() {
+  const [animationPlayed, setAnimationPlayed] = useState(false);
+
   useEffect(() => {
-    console.log("useEffect ran");
-    anime({
-      targets: "header",
-      translateY: [-100, 0],
-      duration: 1500,
-      easing: "easeInOutSine",
-    });
-    console.log("anime ran");
-  }, []);
+    if (!animationPlayed) {
+      console.log("animation played");
+      anime({
+        targets: ".header",
+        translateY: [-100, 0],
+        duration: 1000,
+        easing: "easeInOutQuad",
+      });
+      setAnimationPlayed(true);
+    }
+  }, [animationPlayed]);
 
   return (
     <header className={styles.navParent}>
@@ -29,16 +33,16 @@ function Navigation() {
       <nav>
         <ul className={styles.ulParent}>
           <li>
-            <a href="#about">About Me</a>
+            <a href="/">About Me</a>
           </li>
           <li>
-            <a href="#portfolio">Portfolio</a>
+            <a href="/portfolio">Portfolio</a>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <a href="/contact">Contact</a>
           </li>
           <li>
-            <a href="#resume">Resume</a>
+            <a href="/resume">Resume</a>
           </li>
         </ul>
       </nav>
