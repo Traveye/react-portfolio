@@ -10,7 +10,7 @@ function App() {
         <Navigation />
       </header>
 
-      <main>
+      <main className='main'>
         <About />
       </main>
 
