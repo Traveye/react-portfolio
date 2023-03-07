@@ -1,0 +1,17 @@
+.ulParent {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+    
+}
+
+@media screen and (max-width: 768px) {
+    .ulParent {
+        flex-direction: column;
+        align-items: center;
+        gap: .5rem;
+        padding: 0;
+    }
+}
+    
+
