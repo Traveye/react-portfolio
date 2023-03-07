@@ -1,0 +1,21 @@
+.parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.parent > * {
+    margin: 0.5rem;
+}
+
+.skillsList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media screen and (max-width: 768px) {
+    .skillsList {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+    

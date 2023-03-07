@@ -1,6 +1,7 @@
 import './App.css';
 import Navigation from './components/navigation';
 import Footer from './components/footer';
+import About from './components/about';
 
 function App() {
   return (
@@ -10,10 +11,10 @@ function App() {
       </header>
 
       <main>
- 
+        <About />
       </main>
 
-      <footer>
+      <footer className='footer'>
         <Footer />
       </footer>
     </div>

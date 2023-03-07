@@ -6,7 +6,7 @@ import styles from "./footer.module.css";
 
 function Footer() {
   return (
-    <footer className={styles.footerParent}>
+    <footer>
       <ul className={styles.ulParent}>
         <li>
           <a href="   ">GitHub</a> 
