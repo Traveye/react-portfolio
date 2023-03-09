@@ -38,7 +38,7 @@ const projects = [
     },
     {
         title: "Know Your Government",
-        description: "A site using third party APIs to retrieve information about your local, state, and federal representative based on your address",
+        description: "A site using third party APIs to retrieve information about your representatives",
         url: "https://bhaskell7901.github.io/know-your-government/",
         image: kyg,
     },

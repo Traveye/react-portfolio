@@ -6,16 +6,16 @@ import styles from "./footer.module.css";
 
 function Footer() {
   return (
-    <footer>
+    <footer className='myfooter'>
       <ul className={styles.ulParent}>
         <li>
-          <a href="   ">GitHub</a> 
+          <a href="https://github.com/Traveye">GitHub</a> 
         </li>
         <li>
-          <a href="   ">LinkedIn</a> 
+          <a href="https://www.linkedin.com/in/travis-dupree-96380218b/">LinkedIn</a> 
         </li>
         <li>
-          <a href="   ">Stack Overflow</a>
+          <a href="https://medium.com/@traveye">Medium</a>
         </li>
       </ul>
     </footer>
