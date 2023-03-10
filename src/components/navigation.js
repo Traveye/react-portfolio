@@ -31,17 +31,17 @@ function Navigation() {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/portfolio" activeClassName={styles.activeLink}>
+            <NavLink to="portfolio" activeClassName={styles.activeLink}>
               Portfolio
             </NavLink>
           </li>
           <li>
-            <NavLink to="/contact" activeClassName={styles.activeLink}>
+            <NavLink to="contact" activeClassName={styles.activeLink}>
               Contact
             </NavLink>
           </li>
           <li>
-            <NavLink to="/resume" activeClassName={styles.activeLink}>
+            <NavLink to="resume" activeClassName={styles.activeLink}>
               Resume
             </NavLink>
           </li>
